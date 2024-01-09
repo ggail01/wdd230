@@ -1,0 +1,93 @@
+
+
+
+body {
+    background-color: #f7e1d7;
+}
+
+header {
+    font-family: 'Courier Prime', monospace;
+    background-color: #b0c4b1;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 75%;
+    border: 10px solid #f7e1d7;
+    margin-right: 100px;
+}
+
+h1 {
+    font-family: 'Courier Prime', monospace;
+}
+
+h2, div {
+    font-family: 'Yantramanav', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+nav a {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 2em;
+    color:#f7e1d7;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+main {
+    margin: auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 3fr 1fr;
+    gap: 20px;
+}
+
+main h1 {
+    font-family: 'Courier Prime', monospace;
+    border-bottom:3px solid black;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+.card h2 {
+    font-family: 'Yantramanav', sans-serif;
+    background-color: #b0c4b1;
+    margin: 0;
+    text-align: center;
+}
+
+.card div {
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    font-family: 'Yantramanav', sans-serif;
+    list-style: none;
+}
+
+footer {
+    font-family: 'Courier Prime', monospace; 
+    background-color: #b0c4b1;
+    text-align: center;
+}
+
+#lastModified {
+    color: black;
+    font-size: 75%;
+}
