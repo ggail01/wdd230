@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abigail L. Bado - WDD 230 - Web Fronted Development</title>
-    <meta name="author" content="Sariah Wandler">
-    <meta name="description" content="WDD 230 - Web Frontend Development is a learning web development 
-        course assignment portal for Abigail Bado">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Abigail Bado | course assignment portal">
+    <meta name="author" content="Abigail Bado">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Comme:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
     <header>
         <img src="images/profile-picture.jpg" alt="Abigail's Profile Picture">
-        <span>Abigail Bado</span>
+        <span>Abigail L. Bado</span>
     </header>
 
     <nav>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="week01/chamber-site-plan.html">Site Plan</a>
         <a href="chamber/">Chamber</a>
         <a href="#">Form</a>
@@ -29,7 +33,7 @@
             <ul>
                 <li>
                     Week 01:
-                    <a></a>
+                    <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="#">Js Pen</a>
                 </li>
                 <li>
                     Week 02:
@@ -59,17 +63,14 @@
         </section>
         <section class="card">
             <h2>Information</h2>
-            <div>
-                <input placeholder="weather">
-            </div>
-            <div>
-                <input placeholder="times page was visited">
+            <!-- Information placeholders about weather, visits, etc. -->
+            <div id="weather">
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> &#x1F338;Abigail Bado&#x1F338; Manila, Philippines🏳️</p>
+        <p>&copy; <span id="currentYear"></span> | &#x1F338;Abigail Bado&#x1F338; Manila, Philippines🏳️</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
