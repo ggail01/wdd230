@@ -22,7 +22,7 @@ header img {
 header span {
     color: black;
     font-size: 2rem;
-    margin-right: 60px;
+    margin-right: 20px;
 }
 
 nav {
@@ -53,9 +53,8 @@ main {
 }
 
 main h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     border-bottom:2px solid black;
-    text-align: center;
     margin-bottom: 5px;
 }
 
