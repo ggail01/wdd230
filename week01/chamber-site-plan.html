@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site Plan | Moises Padilla Chamber of Commerce | Abigail Bado</title>
+    <meta name="description" content="Site Plan Project for WDD 230: Web Frontend Development">
+    <meta name="author" content="Abigail Bado">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber-site-plan.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Chamber of Commerce Site Plan</h1>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name:</h2>
+            <p>Moises Padilla Chamber of Commerce</p>
+            <p><strong>Reason:</strong> This name was selected because it is my hometown, and also to represent the vibrant and growing business community of Moises Padilla, Negros Occidental.</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose:</h2>
+            <p>The Moises Padilla Chamber of Commerce website aims to promote local businesses, facilitate community development, and serve as a hub for business networking and resources.</p>
+        </section>
+
+        <section id="scenario">
+            <h2>Scenarios:</h2>
+            <ul>
+                <li>How can local businesses benefit from joining the Chamber of Commerce?</li>
+                <li>What are the upcoming networking events in Moises Padilla?</li>
+                <li>Where can I find information about local business regulations and resources?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema:</h2>
+            <table class="colors">
+                <tr>
+                    <td class="primary">#0A3044</td>
+                    <td class="secondary">#87CEEB</td>
+                    <td class="accent1">#708090</td>
+                    <td class="accent2">#F8F8F8</td>
+                </tr>
+            </table>
+            <p><strong>Primary Color (#0A3044):</strong> Used for backgrounds and dominant elements.</p>
+            <p><strong>Secondary Color (#87CEEB):</strong> Used for supporting elements.</p>
+            <p><strong>Accent Colors:</strong> #708090 (Slate gray) and #F8F8F8 (Off-white) are for highlights.</p>
+        </section>
+
+        <section id="typography">
+            <h2>Typography:</h2>
+            <p><strong>Heading Font:</strong> Anton</p>
+            <p><strong>Paragraph Font:</strong> Montserrat</p>
+            <div class="text-background">
+                <p class="example-text">Example Text (Heading Font)</p>
+                <p> Paragraph Font - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
+                    commodo ligula eget dolor. Aenean massa... </p>
+            </div>
+        </section>        
+
+        <section id="wireframe">
+            <h2>Wireframe:</h2>
+            <p>Below are the rough sketches for both mobile and desktop views.</p>
+            <figure>
+                <figcaption><strong>Mobile View Wireframe</strong></figcaption>
+                <img src="images/mobile-view.png" alt="Mobile View Wireframe" title="Mobile View Wireframe">
+            </figure>
+            <figure>
+                <figcaption><strong>Desktop View Wireframe</strong></figcaption>
+                <img src="images/desktop-view.png" alt="Desktop View Wireframe" title="Desktop View Wireframe">
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | &#x1F338;Abigail L. Bado&#x1F338; | Manila, Philippines🏳️</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/site-plan.js"></script>
 </body>
 </html>

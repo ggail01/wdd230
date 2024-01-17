@@ -1,0 +1,120 @@
+/* General Reset */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header, main, footer, section {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1rem;
+}
+
+/* Header */
+header {
+    background-color: #0A3044;
+    color: white;
+    border: 1px solid #708090;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+section {
+    background-color: white;
+    border: 2px solid #708090;
+    margin-top: 20px;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #0A3044;
+    font-family: 'Anton', sans-serif;
+}
+
+#site-name p:first-of-type {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0A3044;
+}
+
+#site-name p strong {
+    font-size: 1.2em;
+    color: #87CEEB;
+}
+
+/* Color Schema */
+.colors td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.colors .primary {
+    background-color: #0A3044;
+    color: white;
+}
+
+.colors .secondary {
+    background-color: #87CEEB;
+    color: white;
+}
+
+.colors .accent1 {
+    background-color: #708090;
+    color: white;
+}
+
+.colors .accent2 {
+    background-color: #F8F8F8;
+    color: black;
+}
+
+/* Typography */
+#typography p:first-of-type {
+    font-family: 'Anton', sans-serif;
+}
+
+.text-background {
+    background-color: #708090; /* Your chosen background color */
+    padding: 1rem;
+    border-radius: 5px;
+    color: white; /* Assuming you want white text on the dark background */
+}
+
+.text-background .example-text {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
+
+.text-background p {
+    margin: 10px 0;
+}
+
+/* Wireframe */
+#wireframe p, #wireframe figure {
+    text-align: center;
+}
+
+#wireframe img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #708090;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0A3044;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid #708090;
+    border-radius: 5px;
+}
