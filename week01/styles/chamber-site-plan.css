@@ -82,10 +82,10 @@ h2 {
 }
 
 .text-background {
-    background-color: #708090; /* Your chosen background color */
+    background-color: #708090;
     padding: 1rem;
     border-radius: 5px;
-    color: white; /* Assuming you want white text on the dark background */
+    color: white;
 }
 
 .text-background .example-text {
