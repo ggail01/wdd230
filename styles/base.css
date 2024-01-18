@@ -7,22 +7,21 @@ body {
 header {
     background-color: #3a9adf;
     display: flex;
-    height: 250px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 }
 
 header img {
-    height: 200px;
-    border: 5px solid #b6d9e0;
+    height: 100px;
+    border: 3px solid #b6d9e0;
     border-radius: 5px;
-    margin-right: 100px;
+    margin-right: 20px;
 }
 
 header span {
     color: black;
-    font-size: 2rem;
-    margin-right: 20px;
+    font-size: 1.8rem;
 }
 
 nav {
@@ -32,15 +31,16 @@ nav {
 }
 
 nav a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:#f5d7c9;
     text-align: center;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.6rem;
 }
 
 nav a:hover {
-    background-color: rgb(142, 196, 243);
+    background-color: #b6d9e0;
+    color: #333;
 }
 
 main {
@@ -54,26 +54,42 @@ main {
 
 main h1 {
     font-size: 1.5rem;
-    border-bottom:2px solid black;
-    margin-bottom: 5px;
+    border-bottom: 2px solid black;
 }
 
 .card {
     border: 1.5px solid black;
     border-radius: 5px;
-    font-size: 2em;
+    font-size: 1em;
     margin-left: 5px;
+    max-width: 35%;
+}
+
+.card:first-of-type {
+    max-width: 60%;
+    margin-right: 130px;
 }
 
 .card h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #3a9adf;
     margin: 0;
     text-align: center;
 }
 
-.card div {
-    margin: auto;
+.card ul {
+    padding: 0;
+}
+
+
+.card li {
+    padding: 0;
+}
+
+.card p {
+    font-family: 'Alkatra', sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -83,10 +99,14 @@ ul {
     list-style: none;
 }
 
-footer { 
+footer {
     background-color: #333;
-    color: #fff;
+    color: yellow;
     text-align: center;
+}
+
+footer p:first-of-type {
+    color: #f1eeee;
 }
 
 #lastModified {
