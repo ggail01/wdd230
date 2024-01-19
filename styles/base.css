@@ -1,4 +1,10 @@
 /* Base Styles for Mobile */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
     font-family: 'Alkatra', sans-serif;
     background-color: #f1eeee;
@@ -26,16 +32,17 @@ header span {
 
 nav {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #333;
 }
 
 nav a {
     font-size: 1rem;
+    font-family: 'Alkatra', sans-serif;
     color:#f5d7c9;
     text-align: center;
     text-decoration: none;
-    padding: 0.6rem;
 }
 
 nav a:hover {
@@ -50,24 +57,29 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 75px 3fr 1fr;
     gap: 1rem;
+    background-color: #eee;
 }
 
 main h1 {
-    font-size: 1rem;
-    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #3a9adf;
+    margin-top: 20px;
 }
 
 .card {
-    border: 1.5px solid black;
+    border: 1.5px solid #3a9adf;
     border-radius: 5px;
     font-size: 1em;
     margin-left: 5px;
-    max-width: 35%;
+    max-width: 50%;
+    margin-bottom: 20px;
 }
 
 .card:first-of-type {
-    max-width: 60%;
-    margin-right: 130px;
+    max-width: 50%;
+    margin-right: 135px;
+    margin-left: 10px;
 }
 
 .card h2 {
@@ -83,6 +95,7 @@ main h1 {
 
 
 .card li {
+    margin-top: 10px;
     padding: 0;
 }
 
@@ -112,4 +125,69 @@ footer p:first-of-type {
 #lastModified {
     color: yellow;
     font-size: 1rem;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: .25rem .75rem;
+	background-color: #eee;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "📍 ";
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }

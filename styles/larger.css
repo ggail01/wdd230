@@ -5,12 +5,27 @@
     }
 
     nav {
-        flex-direction: row;
         justify-content: center;
     }
 
     nav a {
-        margin: 0 70px; /* Adds horizontal spacing between nav items */
+        text-align: center;
+        margin: 0 50px; /* Adds horizontal spacing between nav items */
+    }
+
+    nav ul {
+        text-align: center;
+        display: flex;
+        margin-left: 100px;
+        max-width: 80%;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        max-width: 80%;
     }
 
     main {
@@ -19,6 +34,7 @@
     }
 
     main h1 {
+        text-align: left;
         font-size: 2rem;
         width: 100%;
     }
@@ -28,7 +44,7 @@
         grid-row-start: 2;
         grid-template-columns: 80% 20%;
         column-gap: 5px;
-        box-shadow: 1px 1px 10px #333;
+        box-shadow: 1px 1px 10px #3a9adf;
         padding: 10px;
     }
 
@@ -36,4 +52,19 @@
         font-size: 1.5rem;
         min-width: 300px;
     }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
 }
