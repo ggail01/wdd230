@@ -26,11 +26,15 @@
 
     #menu {
         max-width: 80%;
+        display: none;
     }
 
     main {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between; /* This will space out the items */
+        gap: 1rem; /* Adds gap between flex items */
+        padding: 1rem;
     }
 
     main h1 {
@@ -51,11 +55,6 @@
     .card h2 {
         font-size: 1.5rem;
         min-width: 300px;
-    }
-
-    #menu {
-        display: none;
-        /* hide hamburger button */
     }
 
     .navigation {
