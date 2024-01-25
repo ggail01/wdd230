@@ -1,0 +1,16 @@
+/* Desktop view */
+@media screen and (min-width: 768px) {
+    .content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content .item {
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    .content .item img {
+        width: 100%;
+    }
+}
