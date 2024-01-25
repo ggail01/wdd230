@@ -18,13 +18,17 @@
     <link rel="stylesheet" href="styles/larger.css">
     
     <!-- Favicon -->
-    
+    <link rel="icon" href="mpc.ico">
+
     <!-- Social Media META -->
+    <meta property="og:title" content="Moises Padilla Chamber of Commerce | Home Page | WDD 230 - Web Frontend Development I">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://visayandailystar.com/wp-content/uploads/2022/10/moises-padilla.jpg">
+    <meta property="og:url" content="https://ggail01.github.io/wdd230/">
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="images/logo.png" alt="icon and name of naguilian chamber of commerce" >
-        <img class="logo-name" src="images/logo-name.png" alt="logo name" >
+        <img class="logo" src="images/logo-name.png" alt="icon and name of naguilian chamber of commerce" >
         <div class="social-icons">
             <a href="#">
                 <img class="icons" src="images/facebook.png" alt="facebook logo">
@@ -36,7 +40,7 @@
                 <img class="icons" src="images/instagram.png" alt="instagram logo">
             </a>
         </div>
-        <!-- for hamburger menu -->
+        <!-- Hamburger Menu -->
         <a href="#" id="menu"></a>
     </header>
     <nav>
@@ -48,24 +52,75 @@
         </ul>
     </nav>
     <div class="hero">
-        <img src="path_to_hero_image.jpg" alt="Hero Image">
+        <img src="images/hero-image.jpg" alt="Hero Image">
+        <a href="#" class="join-button">Join Now</a>
     </div>
 
-    <div class="content">
-        <div class="item">
-            <img src="path_to_image_1.jpg" alt="Image 1">
-            <p>Caption for image 1</p>
-        </div>
+    <div class="content-container">
+        <section class="content-item" id="events">
+            <div class="item-image">
+                <img src="images/events.png" alt="Events">
+            </div>
+            <div class="caption">
+                <h2>Events</h2>
+                <ul>
+                    <li>Event 1</li>
+                    <li>Event 2</li>
+                    <li>Event 3</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="item">
-            <img src="path_to_image_2.jpg" alt="Image 2">
-            <p>Caption for image 2</p>
-        </div>
+        <section class="content-item" id="spotlight">
+            <div class="item-image">
+                <img src="images/spotlight.png" alt="Spotlight">
+            </div>
+            <div class="caption">
+                <h2>Spotlight</h2>
+                <ul>
+                    <li>Spotlight Feature 1</li>
+                    <li>Spotlight Feature 2</li>
+                    <li>Spotlight Feature 3</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="item">
-            <img src="path_to_image_3.jpg" alt="Image 3">
-            <p>Caption for image 3</p>
+        <section class="content-item" id="weather">
+            <div class="item-image">
+                <img src="images/weather.png" alt="Weather">
+            </div>
+            <div class="caption">
+                <h2>Weather</h2>
+                <ul>
+                    <li>Weather Update 1</li>
+                    <li>Weather Update 2</li>
+                    <li>Weather Update 3</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <h3>Contact Details:</h3>
+                <p>Moises Padilla, Negros Occidental, Philippines</p>
+                <p><img src="images/email.png" alt="Email Icon"> mpc.commerce@email.com</p>
+                <p><img src="images/phone.png" alt="Phone Icon"> +1 234 567 8910</p>
+            </div>
+            <div class="footer-2">
+                <a href="../week01/chamber-site-plan.html">
+                    <img src="images/logo.png" alt="Site Logo"/>
+                </a>
+            </div>
         </div>
-    </div>  
+        <div class="footer-3">
+            <p>&copy; <span id="currentYear"></span> | Abigail L. Bado | WDD 230 - Web Frontend Development I</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hambugerMenu.js"></script>
 </body>
 </html>

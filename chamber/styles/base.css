@@ -1,8 +1,120 @@
 /* Mobile view */
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    padding: 0 30px;
+    height: auto;
+}
+
+/* logo/icons */
+.logo {
+    height: 100px;
+}
+
+img.icons {
+    border: 1px solid #708090;
+}
+
+div.social-icons {
+    display: none;
+}
+
+/* navigation */
+nav {
+    background-color: #0A3044;
+    margin: 0 auto;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+	margin: 0 auto;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+	display: block;
+	color: #87CEEB;
+	text-align: left;
+	padding: 1rem;
+	text-decoration: none;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover {
+	background-color: #87CEEB;
+    color: #0A3044;
+}
+
+.navigation a.active::before {
+    content: "📍 ";
+}
+
+.show li {
+    display: block;
+}
+
+/* small menu/nav */
+#menu {
+    display: block;
+    font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+    font-size: 3rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0A3044;
+    padding-bottom: 10px;
+}
+
+a#menu {
+    color: #0A3044;
+}
+
+a#menu.show{
+    padding: 0;
+}
+
+#menu.show::before {
+    content: "X";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 15px ;
+    border-bottom: none;
+    color: #0A3044;
+}
+
+/* hero */
+.hero {
+    position: relative;
 }
 
 .hero img {
@@ -10,12 +122,152 @@ body {
     height: auto;
 }
 
-.content .item {
-    text-align: center;
-    margin-bottom: 20px;
+/* Join Button */
+.join-button {
+    position: absolute;
+    margin-top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #87CEEB;
+    color: #0A3044;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.content .item img {
-    width: 100%;
+/* Main */
+.content-container {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-image, .caption {
+    margin-bottom: 10px;
+}
+
+.item-image img {
+    width: 50%;
     height: auto;
+    margin-left: 100px;
+}
+
+.caption {
+    background-color: #87CEEB;
+    border: 2px solid #708090;
+    padding: 10px;
+}
+
+.content-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-item li {
+    padding: 5px 0;
+}
+
+.content-item li:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    color: #0A3044;
+    text-align: center;
+    border-bottom: 2px solid #0A3044;
+}
+
+/* Footer */
+footer {
+    background-color: #0A3044;
+    color: #F8F8F8;
+    height: auto;
+    padding: 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    text-align: left;
+}
+.footer-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 15px;
+}
+
+.footer-1 p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+
+.footer-2 {
+    text-align: right;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.footer-2 a {
+    display: inline-block; /* Or 'block' depending on your needs */
+}
+
+.footer-2 img {
+    width: 50px; /* Adjust to the size of your logo */
+    height: auto;
+}
+
+.footer-3 {
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.footer-1, .footer-2 {
+    padding: 10px;
+}
+
+footer h3 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    color: #f8f8f8;
+    margin: 5px 0;
+}
+
+footer p {
+    color: #87CEEB;
+    padding: 0;
+    font-size: 13px;
+}
+
+footer a {
+    color: #F8F8F8;
+}
+
+footer a:hover {
+    color: #87CEEB;
+}
+
+#currentYear {
+  margin: 0;  
+}
+
+#lastModified {
+    color: #87CEEB;
 }
