@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 - Web Development | Lazy Loading</title>
+    <meta name="description" content="Lazy Loading Assignment for WDD 230: Web Frontend Development">
+    <meta name="author" content="Abigail L. Bado">
+    <link rel="stylesheet" href="styles/lazyloading.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Demostration</h1>
+    </header>
+
+    <main>
+        <picture>
+            <img src="images/elnido.jpg" alt="Placeholder Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/intra.jpg" alt="Placeholder Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/lavander.jpg" alt="Placeholder Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/yellowflower.jpg" alt="Placeholder Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/photography.jpg" alt="Placeholder Image" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | &#x1F338;Abigail L. Bado&#x1F338; Manila, Philippines🏳️</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>

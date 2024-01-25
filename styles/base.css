@@ -40,7 +40,7 @@ nav {
 nav a {
     font-size: 1rem;
     font-family: 'Alkatra', sans-serif;
-    color:#f5d7c9;
+    color:#fdebe2;
     text-align: center;
     text-decoration: none;
 }
@@ -57,7 +57,8 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 75px 3fr 1fr;
     gap: 1rem;
-    background-color: #eee;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
 }
 
 main h1 {
@@ -71,7 +72,7 @@ main h1 {
     border: 1.5px solid #3a9adf;
     border-radius: 5px;
     font-size: 1em;
-    margin-left: 100px;
+    margin-left: 80px;
     max-width: 50%;
     margin-bottom: 20px;
     gap: 1rem;
@@ -114,7 +115,7 @@ footer {
 }
 
 footer p:first-of-type {
-    color: #f1eeee;
+    color: #fdebe2;
 }
 
 #lastModified {
@@ -127,11 +128,11 @@ footer p:first-of-type {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: .25rem .75rem;
-	background-color: #eee;
-	color: #000;
+	background-color: #fdebe2;
+	color: #333;
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+    left: 1rem
+
 }
 
 #menu::before {
@@ -147,7 +148,7 @@ footer p:first-of-type {
 	flex-direction: column;
 	list-style: none;
 	background-color: #333;
-	color: #fff;
+	color: #fdebe2;
 }
 .navigation li {
 	display: none;
@@ -157,10 +158,10 @@ footer p:first-of-type {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: #fdebe2;
 }
 .navigation li a:hover {
-	background-color: #bbb;
+	background-color: #b6d9e0;
 	color: #333;
 	font-weight: 700;
 }

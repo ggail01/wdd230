@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(218, 255, 243);
+}
+h1{
+    text-align: center;
+}
+main{
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 20s;
+}
+
+footer {
+    background-color: aqua;
+    text-align: center;
+}
