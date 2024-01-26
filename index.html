@@ -45,6 +45,16 @@
         </ul>
     </nav>
 
+    <div id="hero">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/hero-small" width="400" height="400">
+          <source media="(min-width: 400px) and (max-width: 960px)" srcset="images/manila_php_temple.webp">
+          <source media="(min-width: 960px)" srcset="images/hero-large.webp">
+          <img id="hero-img" src="images/manila_php_temple.webp" alt="Picture of the Manila Temple" loading="lazy" width="960" height="400">
+        </picture>
+        <div id="hero-text">Manila Philippines Temple</div>
+    </div>
+
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
@@ -101,6 +111,10 @@
             </ul>
         </section>
     </main>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30876.802808333727!2d121.02931140718327!3d14.67860738411507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ba0942ef7375%3A0x4a9a32d9fe083d40!2sQuezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1706239165192!5m2!1sen!2sph" 
+        width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> | &#x1F338;Abigail L. Bado&#x1F338; Manila, Philippines🏳️</p>
