@@ -30,7 +30,7 @@
 
 <body>
     <header>
-        <img src="images/profile-picture.jpg" alt="Abigail's Profile Picture">
+        <img src="images/profile.webp" alt="Abigail's Profile Picture">
         <span>Abigail L. Bado</span>
     </header>
 
@@ -47,7 +47,7 @@
 
     <div id="hero">
         <picture>
-          <source media="(max-width: 400px)" srcset="images/hero-small" width="400" height="400">
+          <source media="(max-width: 400px)" srcset="images/hero-small.webp" width="400" height="400">
           <source media="(min-width: 400px) and (max-width: 960px)" srcset="images/manila_php_temple.webp">
           <source media="(min-width: 960px)" srcset="images/hero-large.webp">
           <img id="hero-img" src="images/manila_php_temple.webp" alt="Picture of the Manila Temple" loading="lazy" width="960" height="400">
@@ -106,7 +106,7 @@
                     Weather:
                 </li>
                 <li>
-                    Visits: 
+                    Visits: <span class="visits"></span>
                 </li>
             </ul>
         </section>
@@ -123,5 +123,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visitors.js"></script>
 </body>
 </html>

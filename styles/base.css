@@ -58,8 +58,8 @@ nav a:hover {
 #hero-text {
     position: absolute;
     top: 20px;
-    left: 30px;
-    font-size: 1.5rem;
+    left: 40px;
+    font-size: 1rem;
     font-weight: 600;
     background: radial-gradient(#fdebe2, #3a9adf);
     border: 2px solid rgba(0, 0, 0, 0.75);
@@ -68,7 +68,8 @@ nav a:hover {
 }
 
 #hero-img {
-    width: 100%; height: auto;
+    width: 100%; 
+    height: auto;
     margin-top: 10px;
 }
 main {
@@ -150,7 +151,7 @@ footer p:first-of-type {
 	font-size: 1.5rem;
     background-color: #333;
     color: #fdebe2;
-    margin-right: 350px;
+    margin-right: 500px;
 }
 
 #menu::before {
@@ -165,8 +166,6 @@ footer p:first-of-type {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-    background-color: #333;
-	color: #fdebe2;
 }
 
 .navigation li {
@@ -178,7 +177,6 @@ footer p:first-of-type {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fdebe2;
 }
 
 .navigation li a:hover {
@@ -202,8 +200,8 @@ footer p:first-of-type {
 /* Dark mode */
 #mode {
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: .3rem;
+	right: .3rem;
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
