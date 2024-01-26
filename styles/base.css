@@ -147,10 +147,15 @@ footer p:first-of-type {
 
 /* Small View Navigation/Menu */
 #menu {
-	font-size: 1.5rem;
-    background-color: #333;
-    color: #fdebe2;
-    margin-right: 500px;
+	display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align: left;
+    padding: 5px 2vw;
 }
 
 #menu::before {
@@ -204,6 +209,8 @@ footer p:first-of-type {
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
+    color: rgb(0, 0, 0);
+    background-color: #3a9adf;
 }
 
 /* iframe */
