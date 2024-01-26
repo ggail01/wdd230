@@ -13,7 +13,7 @@ body {
 header {
     background-color: #3a9adf;
     display: flex;
-    height: 200px;
+    height: 150px;
     justify-content: center;
     align-items: center;
 }
@@ -58,7 +58,7 @@ nav a:hover {
 #hero-text {
     position: absolute;
     top: 20px;
-    left: 40px;
+    left: 50px;
     font-size: 1rem;
     font-weight: 600;
     background: radial-gradient(#fdebe2, #3a9adf);
@@ -70,7 +70,6 @@ nav a:hover {
 #hero-img {
     width: 100%; 
     height: auto;
-    margin-top: 10px;
 }
 main {
     margin: auto;
@@ -214,4 +213,15 @@ iframe {
     max-width: 100%;
     padding: 15px;
     border: 0;
+    animation: fade 10s;
+}
+
+/* Lazy Loading */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 10;
+    }
 }
