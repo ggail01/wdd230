@@ -312,7 +312,7 @@ footer a:hover {
 }
 
 .calendar-header span {
-    font-size: .5rem;
+    font-size: .6rem;
     font-weight: bold;
     padding: 5px;
     border: 1px solid #708090;
@@ -360,6 +360,7 @@ footer a:hover {
 img.effect {
     width: 90%;
     height: auto;
+    animation: fade 10s;
 }
 
 .image {
@@ -399,4 +400,13 @@ img.effect {
 	font-size: 1.5rem;
     font-weight: 100;
     letter-spacing: 1px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 10;
+    }
 }
