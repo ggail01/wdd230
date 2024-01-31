@@ -297,9 +297,11 @@ footer a:hover {
 
 /* calendar */
 #calendar {
+    background-color: #0A3044;
+    color: #87CEEB;
     max-width: 350px;
     margin: 0 auto;
-    border: 1px solid #ccc;
+    border: 1px solid #708090;
     text-align: center;
     margin-top: 15px;
 }
@@ -313,7 +315,7 @@ footer a:hover {
     font-size: .5rem;
     font-weight: bold;
     padding: 5px;
-    border: 1px solid #0A3044;
+    border: 1px solid #708090;
 }
 
 .calendar-days div {
@@ -329,7 +331,7 @@ footer a:hover {
 
 /* Sidebar styles */
 .sidebar {
-    background-color: #f3f3f3;
+    background-color: #708090;
     padding: 20px;
     border-radius: 10px;
 }
@@ -337,19 +339,21 @@ footer a:hover {
 .sidebar p {
     font-size: .9rem;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .sidebar h2,
 .sidebar h3 {
     font-family: 'Anton', sans-serif;
     font-size: 1.5rem;
+    font-weight: 100;
     color: #0A3044;
     margin: 5px 15px;
+    margin-bottom: 10px;
 }
 
 .sidebar h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 10px 0 0 15px;
 }
 
