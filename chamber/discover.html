@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moises Padilla Chamber of Commerce | Home Page | WDD 230 - Web Frontend Development I</title>
+    <meta name="description" content="Home Page of Moises Padilla Chamber of Commerce for WDD 230: Web Frontend Development">
+    <meta name="author" content="Abigail L. Bado">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="mpc.ico">
+
+    <!-- Social Media META -->
+    <meta property="og:title" content="Moises Padilla Chamber of Commerce | Home Page | WDD 230 - Web Frontend Development I">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://visayandailystar.com/wp-content/uploads/2022/10/moises-padilla.jpg">
+    <meta property="og:url" content="https://ggail01.github.io/wdd230/">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo-name.png" alt="icon and name of naguilian chamber of commerce" >
+        <div class="social-icons">
+            <a href="#">
+                <img class="icons" src="images/facebook.png" alt="facebook logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/twitter.png" alt="twitter logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/instagram.png" alt="instagram logo">
+            </a>
+        </div>
+        <!-- Hamburger Menu -->
+        <a href="#" id="menu"></a>
+    </header>
+    <nav>
+        <ul class="navigation container">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">Discovery</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="discover">
+            <div class="discover-title">
+                <h1>Discover the Moises Padilla Chamber of Commerce</h1>
+            </div>
+            
+            <aside class="sidebar">
+                <p><span id="visitMessage"></span></p>
+
+                <h2>Community Information</h2>
+                <p>Welcome! Moises Padilla is a vibrant community in the Philippines, known for its rich 
+                    cultural heritage, local businesses, and lively festivals.
+                </p>
+                
+                <h3>Demographics</h3>
+                <p>Moises Padilla boasts a diverse population, characterized by a 
+                    harmonious blend of cultures, ages, and occupations within its vibrant community.
+                </p>
+
+                <h3>Education</h3>
+                <p>Moises Padilla emphasizes education with accessible schools and a commitment to 
+                    fostering learning opportunities, enhancing the community's intellectual growth.
+                </p>
+
+                <h3>Upcoming Events</h3>
+                <h4>Event 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                <h4>Event 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                <h4>Event 3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+
+                <!-- Calendar -->
+                <h3>Community Calendar</h3>
+                <div id="calendar">
+                    <div class="calendar-header">
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+                    </div>
+                    <div class="calendar-days">
+                        <!-- JavaScript will populate this area -->
+                    </div>
+                </div>                
+            </aside>
+
+            <div class="disover-content">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/local-business-small.webp"  width="600" height="400">
+                        <img class="image effect" src="images/local-business-large.webp" alt="Local Business" loading="lazy" width="1220" height="700">
+                    </picture>
+                    <h2 class="image-text">Local Business</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/magayon-festival-small.webp"  width="600" height="400">
+                        <img class="image1 effect" src="images/magayon-festival-large.webp" alt="Festival" loading="lazy" width="1220" height="700">
+                    </picture>
+                    <h2 class="image-text">Festivals</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/demographics-small.webp" width="600" height="400">
+                        <img class="image effect" src="images/demographics-large.webp" alt="Demographics" loading="lazy" width="1220" height="700">
+                    </picture>
+                    <h2 class="image-text">Demographics</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/attractions-small.webp"  width="600" height="400">
+                        <img class="image1 effect" src="images/attractions-large.webp" alt="Attractions" loading="lazy" width="1220" height="700">
+                    </picture>
+                    <h2 class="image-text">Attractions</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/organizations-small.webp" width="600" height="400">
+                        <img class="image effect" src="images/organizations-large.webp" alt="Organizations" loading="lazy" width="1220" height="700">
+                    </picture>
+                    <h2 class="image-text">Organizations</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                    <source media="(max-width: 600px)" srcset="images/heritage-small.webp" width="600" height="400">
+                    <img class="image1 effect" src="images/heritage-large.webp" alt="Heritage" loading="lazy" width="1220" height="700">
+                </picture>
+                <h2 class="image-text">Heritage</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <h3>Contact Details:</h3>
+                <p>Moises Padilla, Negros Occidental, Philippines</p>
+                <p><img src="images/email.png" alt="Email Icon"> mpc.commerce@email.com</p>
+                <p><img src="images/phone.png" alt="Phone Icon"> +1 234 567 8910</p>
+            </div>
+            <div class="footer-2">
+                <a href="../week01/chamber-site-plan.html">
+                    <img src="images/logo.png" alt="Site Logo">
+                </a>
+            </div>
+        </div>
+        <div class="footer-3">
+            <p>&copy; <span id="currentYear"></span> | Abigail L. Bado | WDD 230 - Web Frontend Development I</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hambugerMenu.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>

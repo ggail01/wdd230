@@ -135,6 +135,17 @@ a#menu.show{
     border-radius: 5px;
 }
 
+h1 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    background-color: #0A3044;
+    color: #87CEEB;
+    font-weight: 100;
+    padding: 1.5rem;
+}
+
 /* Main */
 .content-container {
     padding: 20px;
@@ -154,7 +165,7 @@ a#menu.show{
 .item-image img {
     width: 50%;
     height: auto;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .caption {
@@ -177,7 +188,7 @@ a#menu.show{
     border-bottom: none;
 }
 
-h2 {
+.caption h2 {
     font-family: 'Anton', sans-serif;
     font-size: 1rem;
     color: #0A3044;
@@ -225,11 +236,11 @@ footer {
 }
 
 .footer-2 a {
-    display: inline-block; /* Or 'block' depending on your needs */
+    display: inline-block;
 }
 
 .footer-2 img {
-    width: 50px; /* Adjust to the size of your logo */
+    width: 50px;
     height: auto;
 }
 
@@ -270,4 +281,118 @@ footer a:hover {
 
 #lastModified {
     color: #87CEEB;
+}
+
+/* ---DISCOVER PAGE--- */
+.discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.discover h1 {
+    font-size: 1.5rem;
+}
+
+/* calendar */
+#calendar {
+    max-width: 350px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.calendar-header, .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-header span {
+    font-size: .5rem;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #0A3044;
+}
+
+.calendar-days div {
+    font-size: .9rem;
+    padding: 5px;
+    border: 1px solid #708090;
+    cursor: pointer;
+}
+
+.calendar-days div:hover {
+    background-color: #f4f4f4;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar p {
+    font-size: .9rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar h2,
+.sidebar h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    color: #0A3044;
+    margin: 5px 15px;
+}
+
+.sidebar h4 {
+    font-size: 1.2rem;
+    margin: 10px 0 0 15px;
+}
+
+img.effect {
+    width: 90%;
+    height: auto;
+}
+
+.image {
+    border-radius: 15px 100px;
+    width: auto;
+    height: auto;
+    opacity: 95%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.image1 {
+    border-radius: 100px 15px;
+    width: auto;
+    height: auto;
+    opacity: 95%;
+    object-fit: cover;
+}
+
+.image:hover,
+.image1:hover {
+    opacity: 1;
+    filter: saturate(50%);
+}
+
+.img-container {
+    position: relative;
+}
+
+.image-text {
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+    opacity: 0.90;
+    padding: 10px;
+    color: #F8F8F8;
+	font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
