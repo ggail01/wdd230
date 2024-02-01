@@ -57,6 +57,7 @@ nav a:hover {
     color: #333;
 }
 
+/* ---FORM--- */
 main#form {
     max-width: var(--form-width);
     margin: 50px auto;
@@ -103,6 +104,13 @@ input, select, textarea {
     font-size: .6rem;
 }
 
+#passwordMatchStatus {
+    font-family: 'Arial', sans-serif;
+    font-size: .6rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
 input#username, input#password,
 input#confirmPassword, input#email {
     font-family: 'Arial', sans-serif;
@@ -122,12 +130,26 @@ button:hover {
     background-color: #333;
 }
 
-#ratingValue {
+label.pageRating {
+    margin-top: 20px;
+}
+
+#rangevalue {
     display: inline-block;
     margin-left: 10px;
     font-weight: bold;
+    margin-bottom: -20px;
 }
 
+main#record h1 {
+    font-size: 1.5rem;
+}
+
+main#record p {
+    font-size: 1rem;
+}
+
+/* ---FOOTER--- */
 footer {
     background-color: #333;
     color: yellow;
@@ -257,6 +279,16 @@ footer p:first-of-type {
 
     #menu {
         display: none;
+    }
+
+    main#record h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    main#record p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
 
 }

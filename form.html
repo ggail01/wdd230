@@ -4,7 +4,7 @@
     <!-- META Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abigail L. Bado - WDD 230 - Web Frontend Development I</title>
+    <title>Abigail L. Bado | Form Page | WDD 230 - Web Frontend Development I</title>
     <meta name="description" content="WDD 230 - Web Frontend Development. Abigail L. Bado's course assignment portal.">
     <meta name="author" content="Abigail L. Bado">
 
@@ -19,12 +19,6 @@
 
     <!-- Favicon -->
     <link rel="icon" href="alb.ico">
-
-    <!-- Social Media META -->
-    <meta property="og:title" content="Abigail L. Bado - WDD 230 - Web Frontend Development I">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://cdn.pixabay.com/photo/2014/07/15/03/01/quezon-city-393627_1280.jpg">
-    <meta property="og:url" content="https://ggail01.github.io/wdd230/">
 </head>
 
 <body>
@@ -45,28 +39,42 @@
     </nav>
 
     <main id="form">
-        <form action="record.html" method="get">
-            <label for="username">Username:</label>
+        <form method="get" action="record.html">
+            <label for="username">Username*</label>
             <input type="text" id="username" name="username" placeholder="Enter Username" required>
 
-            <label for="password">Password:</label>
+            <label for="password">Password*</label>
             <div class="password-container">
                 <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" title="Please enter at least 8 alphanumeric characters" placeholder="Enter Password" required>
                 <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('password')">Show</button>
             </div>
 
-            <label for="confirmPassword">Confirm Password:</label>
+            <label for="confirmPassword">Confirm Password*</label>
             <div class="password-container">
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Verify Password" oninput="validatePasswords()" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" pattern="[a-zA-Z0-9]+" title="Re-enter password." placeholder="Re-enter Password" oninput="validatePasswords()" required>
                 <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('confirmPassword')">Show</button>
+                <div id="passwordMatchStatus"></div>
             </div>
 
-            <label for="email">Email:</label>
+            <label for="email">E-mail*</label>
             <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="Enter a valid e-mail" required>
 
-            <label for="pageRating">Page Rating:</label>
-            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="updateRatingValue()">
-            <span id="ratingValue">1</span>
+            <label class="pageRating">Page Rating:</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+	            <option value="0">0</option>
+	            <option value="1">1</option>
+	            <option value="2">2</option>
+	            <option value="3">3</option>
+	            <option value="4">4</option>
+	            <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
 
             <button type="submit">Send Feedback</button>
         </form>

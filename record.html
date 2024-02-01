@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abigail L. Bado | Thank You! | WDD 230 - Web Frontend Development I</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Abigail L. Bado's course assignment portal.">
+    <meta name="author" content="Abigail L. Bado">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Comme:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="alb.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Abigail's Profile Picture" width="80" height="80">
+        <span>Abigail L. Bado</span>
+    </header>
+
+    <nav>
+        <div id="mode"> 🕶️ </div>
+        <button id="menu" title="Menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="week01/chamber-site-plan.html">SITE PLAN</a></li>
+            <li><a href="chamber/index.html">CHAMBER</a></li>
+            <li><a class="active" href="form.html">FORM</a></li>
+        </ul>
+    </nav>
+
+    <main id="record">
+        <h1>Form Submitted Successfully!</h1>
+        <p>Thank you for submitting the form. Your information has been recorded.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | &#x1F338;Abigail L. Bado&#x1F338; Manila, Philippines🏳️</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+</html>
