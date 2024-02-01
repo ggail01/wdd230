@@ -116,6 +116,11 @@ button.show-password-btn {
     background-color: #333;
 }
 
+button.show-password-btn:hover {
+    color: #333; 
+    background-color: #b6d9e0;
+}
+
 input#username, input#password,
 input#confirmPassword, input#email {
     font-family: 'Arial', sans-serif;
