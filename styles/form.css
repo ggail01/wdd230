@@ -1,14 +1,14 @@
 /* Form styles */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 :root {
     --main-bg-color: #f1eeee;
     --form-width: 500px;
     --form-padding: 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
