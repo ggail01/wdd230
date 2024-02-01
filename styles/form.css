@@ -1,0 +1,262 @@
+/* Form styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #f1eeee;
+    --form-width: 500px;
+    --form-padding: 20px;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Alkatra', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #3a9adf;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    border: 3px solid #b6d9e0;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+header span {
+    color: black;
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #333;
+}
+
+nav a {
+    font-size: 1rem;
+    font-family: 'Alkatra', sans-serif;
+    color:#fdebe2;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #b6d9e0;
+    color: #333;
+}
+
+main#form {
+    max-width: var(--form-width);
+    margin: 50px auto;
+    padding: var(--form-padding);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.show-password-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: .6rem;
+}
+
+input#username, input#password,
+input#confirmPassword, input#email {
+    font-family: 'Arial', sans-serif;
+    font-size: .6rem;
+}
+
+button {
+    background-color: #3a9adf;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#ratingValue {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: yellow;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p:first-of-type {
+    color: #fdebe2;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 1rem;
+}
+
+/* Small View Navigation/Menu */
+#menu {
+	display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align: left;
+    padding: 5px 2vw;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation li a:hover {
+	background-color: #b6d9e0;
+	color: #333;
+	font-weight: 700;
+}
+
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "📍 ";
+}
+
+/* Dark mode */
+#mode {
+	position: absolute;
+	top: .3rem;
+	right: .3rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+    color: rgb(0, 0, 0);
+    background-color: #3a9adf;
+}
+
+/* Larger Styles for Desktop */
+@media screen and (min-width: 500px) {
+    body {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        text-align: center;
+        margin: 0 50px;
+    }
+
+    nav ul {
+        text-align: center;
+        display: flex;
+        margin-left: 100px;
+        max-width: 80%;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+}
