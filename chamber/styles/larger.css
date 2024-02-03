@@ -100,4 +100,31 @@
         letter-spacing: 1px;
     }
     
+    /* ---JOIN PAGE-- */
+    h1#form-h1 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    #join-form {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    #membership-benefits {
+        position: relative;
+        right: 25px;
+        width: 50%;
+    }
+
+    table {
+        margin-right: 0;
+        grid-column: 2/4;
+        width: 465px;
+        height: 180px;
+        position: sticky;
+        top: 10%;
+        place-items: center;
+    }
+
 }
