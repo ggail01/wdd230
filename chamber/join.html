@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moises Padilla Chamber of Commerce | Join Page | WDD 230 - Web Frontend Development I</title>
+    <meta name="description" content="Join Page of Moises Padilla Chamber of Commerce for WDD 230: Web Frontend Development">
+    <meta name="author" content="Abigail L. Bado">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="mpc.ico">
+
+    <!-- Social Media META -->
+    <meta property="og:title" content="Moises Padilla Chamber of Commerce | Home Page | WDD 230 - Web Frontend Development I">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://visayandailystar.com/wp-content/uploads/2022/10/moises-padilla.jpg">
+    <meta property="og:url" content="https://ggail01.github.io/wdd230/">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo-name.png" alt="icon and name of naguilian chamber of commerce" >
+        <div class="social-icons">
+            <a href="#">
+                <img class="icons" src="images/facebook.png" alt="facebook logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/twitter.png" alt="twitter logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/instagram.png" alt="instagram logo">
+            </a>
+        </div>
+        <!-- Hamburger Menu -->
+        <a id="menu"></a>
+    </header>
+
+    <nav>
+        <ul class="navigation container">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="../chamber/discover.html">Discovery</a></li>
+            <li><a href="../chamber/directory.html">Directory</a></li>
+            <li><a href="../chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1 id="form-h1">Join Moises Padilla Chamber of Commerce</h1>
+    </div>
+
+    <!-- Main Content for Join Page -->
+    <main>
+        <h2 id="form-h2">Membership Application Form</h2>
+        <section id="join-form">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+      
+                    <label for="firstName">First Name*
+                        <input type="text" id="firstName" name="firstName" required>
+                    </label>
+      
+                    <label for="lastName">Last Name*
+                        <input type="text" id="lastName" name="lastName" required>
+                    </label>
+      
+                    <label for="position">Title or Position
+                        <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}">
+                    </label>
+      
+                    <label for="email">Email*
+                        <input type="email" id="email" name="email" placeholder="your-email@example.com" required>
+                    </label>
+      
+                    <label for="phone">Mobile Phone*
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+                </fieldset>
+      
+                <fieldset>
+                    <legend>Business Information</legend>
+      
+                    <label for="organization">Organization's Name*
+                        <input type="text" id="organization" name="organization" required>
+                    </label>
+      
+                    <label for="membershipLevel">Membership Level*
+                        <select id="membershipLevel" name="membershipLevel" required>
+                            <option value="np">NP Membership (Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+      
+                    <label for="description">Description:
+                        <textarea id="description" name="description"></textarea>
+                        <input type="hidden" id="timestamp" name="timestamp" value="12345">
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Join">
+            </form>
+        </section>
+
+        <section id="membership-benefits">
+            <table>
+                <caption>Membership Levels Benefits</caption>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Cost</th>
+                        <th>Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NP Membership</td>
+                        <td>Free</td>
+                        <td>No cost for non-profit organizations</td>
+                    </tr>
+                    <tr>
+                        <td>Bronze Membership</td>
+                        <td>Cost TBA</td>
+                        <td>Benefits for Bronze Membership</td>
+                    </tr>
+                    <tr>
+                        <td>Silver Membership</td>
+                        <td>Cost TBA</td>
+                        <td>Benefits for Silver Membership</td>
+                    </tr>
+                    <tr>
+                        <td>Gold Membership</td>
+                        <td>Cost TBA</td>
+                        <td>Benefits for Gold Membership</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <h3>Contact Details:</h3>
+                <p>Moises Padilla, Negros Occidental, Philippines</p>
+                <p><img src="images/email.png" alt="Email Icon"> mpc.commerce@email.com</p>
+                <p><img src="images/phone.png" alt="Phone Icon"> +1 234 567 8910</p>
+            </div>
+            <div class="footer-2">
+                <a href="../week01/chamber-site-plan.html">
+                    <img src="images/logo.png" alt="Site Logo">
+                </a>
+            </div>
+        </div>
+        <div class="footer-3">
+            <p>&copy; <span id="currentYear"></span> | Abigail L. Bado | WDD 230 - Web Frontend Development I</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hambugerMenu.js"></script>
+</body>
+</html>
