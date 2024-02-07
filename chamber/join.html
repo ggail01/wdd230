@@ -59,92 +59,111 @@
 
     <!-- Main Content for Join Page -->
     <main>
-        <h2 id="form-h2">Membership Application Form</h2>
-        <section id="join-form">
-            <form action="thankyou.html" method="get">
+        <h2>Membership Application Form</h2>
+        <section class="join-container">
+            <form action="thankyou.html" method="get" class="join-form">
                 <fieldset>
                     <legend>Personal Information</legend>
-      
-                    <label for="firstName">First Name*
-                        <input type="text" id="firstName" name="firstName" required>
-                    </label>
-      
-                    <label for="lastName">Last Name*
-                        <input type="text" id="lastName" name="lastName" required>
-                    </label>
-      
-                    <label for="position">Title or Position
-                        <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}">
-                    </label>
-      
-                    <label for="email">Email*
-                        <input type="email" id="email" name="email" placeholder="your-email@example.com" required>
-                    </label>
-      
-                    <label for="phone">Mobile Phone*
-                        <input type="tel" id="phone" name="phone" required>
-                    </label>
+                    <div class="form-group">
+                        <label for="first_name">First Name*
+                            <input type="text" id="first_name" name="first_name" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last Name*
+                            <input type="text" id="last_name" name="last_name" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title or Position*
+                            <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*
+                            <input type="email" id="email" name="email" placeholder="mpchamber@email.com" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Phone*
+                            <input type="tel" id="phone" name="phone" required>
+                        </label>
+                    </div>
                 </fieldset>
-      
                 <fieldset>
                     <legend>Business Information</legend>
-      
-                    <label for="organization">Organization's Name*
-                        <input type="text" id="organization" name="organization" required>
-                    </label>
-      
-                    <label for="membershipLevel">Membership Level*
-                        <select id="membershipLevel" name="membershipLevel" required>
-                            <option value="np">NP Membership (Free)</option>
-                            <option value="bronze">Bronze Membership</option>
-                            <option value="silver">Silver Membership</option>
-                            <option value="gold">Gold Membership</option>
-                        </select>
-                    </label>
-      
-                    <label for="description">Description:
-                        <textarea id="description" name="description"></textarea>
-                        <input type="hidden" id="timestamp" name="timestamp" value="12345">
-                    </label>
+                    <div class="form-group">
+                        <label for="business_name">Business/Organization Name*
+                            <input type="text" id="business_name" name="business_name" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="membership_level">Membership Level:
+                            <select id="membership_level" name="membership_level">
+                                <option value="NP">NP Membership (Free)</option>
+                                <option value="Bronze">Bronze Membership</option>
+                                <option value="Silver">Silver Membership</option>
+                                <option value="Gold">Gold Membership</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Business/Organization Description:
+                            <textarea id="description" name="description"></textarea>
+                        </label>
+                    </div>
                 </fieldset>
-
-                <input type="submit" value="Join">
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <div class="form-group">
+                    <input type="submit" value="Join Chamber Membership">
+                </div>
             </form>
-        </section>
 
-        <section id="membership-benefits">
-            <table>
-                <caption>Membership Levels Benefits</caption>
-                <thead>
-                    <tr>
-                        <th>Level</th>
-                        <th>Cost</th>
-                        <th>Benefits</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>NP Membership</td>
-                        <td>Free</td>
-                        <td>No cost for non-profit organizations</td>
-                    </tr>
-                    <tr>
-                        <td>Bronze Membership</td>
-                        <td>Cost TBA</td>
-                        <td>Benefits for Bronze Membership</td>
-                    </tr>
-                    <tr>
-                        <td>Silver Membership</td>
-                        <td>Cost TBA</td>
-                        <td>Benefits for Silver Membership</td>
-                    </tr>
-                    <tr>
-                        <td>Gold Membership</td>
-                        <td>Cost TBA</td>
-                        <td>Benefits for Gold Membership</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Membership Level</th>
+                            <th>Benefits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🌟 NP Membership</td>
+                            <td>No fee</td>
+                        </tr>
+                        <tr>
+                            <td>🥉 Bronze Membership</td>
+                            <td>۞ Networking Opportunities
+                            <br>۞ Business Referrals
+                            <br>۞ Educational Workshops
+                            <br>۞ Advocacy Support
+                            <br>۞ Member Discounts
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>🥈 Silver Membership</td>
+                            <td>۞ Enhanced Networking Opportunities
+                            <br>۞ Marketing Opportunities
+                            <br>۞ Business Development Support
+                            <br>۞ Legislative Updates and Advocacy
+                            <br>۞ Access to Premium Resources
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>🥇 Gold Membership</td>
+                            <td>۞ Executive Level Networking
+                            <br>۞ VIP Concierge Services
+                            <br>۞ Brand Visibility and Recognition
+                            <br>۞ Thought Leadership Opportunities
+                            <br>۞ Strategic Partnerships
+                            <br>۞ Global Business Expansion Support
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
     </main>

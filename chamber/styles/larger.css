@@ -106,25 +106,33 @@
         margin-top: 20px;
     }
 
-    #join-form {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    
-    #membership-benefits {
-        position: relative;
-        right: 25px;
-        width: 50%;
+    .join-form {
+        margin-left: 20px;
+        margin-right: 100px;
     }
 
-    table {
-        margin-right: 0;
-        grid-column: 2/4;
-        width: 465px;
-        height: 180px;
-        position: sticky;
-        top: 10%;
-        place-items: center;
+    .join-form fieldset {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .membership-benefits {
+        flex: 1;
+        max-width: 400px;
+        margin-right: 20px;
+    }
+
+    .membership-benefits table {
+        width: 400px;
+    } 
+
+    /* ---THANK YOU PAGE--- */
+    .thank-you-container {
+        padding: 10px;
+    }
+
+    .thank-you-container p {
+        font-size: 1rem;
     }
 
 }
