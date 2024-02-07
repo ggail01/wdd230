@@ -446,6 +446,12 @@ h2 {
     font-size: 1.5rem;
 }
 
+#required {
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
 /* Container styles */
 .join-container {
     display: flex;

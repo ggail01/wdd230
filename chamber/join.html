@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>|Join Page Of Moises Padilla Chamber of Commerce |</title>
+    <title>| Join Page Of Moises Padilla Chamber of Commerce |</title>
     <meta name="description" content="Join Page of Moises Padilla Chamber of Commerce for WDD 230: Web Frontend Development">
     <meta name="author" content="Abigail L. Bado">
 
@@ -60,6 +60,7 @@
     <!-- Main Content for Join Page -->
     <main>
         <h2>Membership Application Form</h2>
+        <div id="required">(*) Indicates Required</div>
         <section class="join-container">
             <form action="thankyou.html" method="get" class="join-form">
                 <fieldset>
@@ -76,7 +77,7 @@
                     </div>
                     <div class="form-group">
                         <label for="title">Title or Position*
-                            <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
+                            <input type="text" id="title" name="title" pattern="[a-zA-Z -]{7,}" placeholder="At least 7 characters" required>
                         </label>
                     </div>
                     <div class="form-group">
