@@ -10,10 +10,6 @@
                 {
                     "url": "week01/media-query.html",
                     "title": "Media Query"
-                },
-                {
-                    "url": "https://codepen.io/ggail01/pen/dyrmpeq",
-                    "title": "JS Pen"
                 }
             ]
         },
@@ -23,10 +19,6 @@
                 {
                     "url": "week02/design.html",
                     "title": "Design Principles"
-                },
-                {
-                    "url": "https://codepen.io/ggail01/pen/bGZvwzV",
-                    "title": "Menu"
                 },
                 {
                     "url": "week02/bom.html",
@@ -60,10 +52,6 @@
             "week": "Week 4:",
             "links": [
                 {
-                    "url": "https://codepen.io/ggail01/pen/bGZvBbp",
-                    "title": "Pseudo-Classes"
-                },
-                {
                     "url": "week04/images/exercise.webp",
                     "title": "Combinators"
                 },
@@ -80,10 +68,6 @@
         {
             "week": "Week 5:",
             "links": [
-                {
-                    "url": "https://codepen.io/ggail01/pen/QWoVWvp",
-                    "title": "Psuedo Elements"
-                },
                 {
                     "url": "week05/new-ward-members.json",
                     "title": "JSON"
