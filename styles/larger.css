@@ -55,6 +55,7 @@
         grid-row-start: 2;
         grid-template-columns: 80% 20%;
         column-gap: 5px;
+        max-width: 50%;
         box-shadow: 1px 1px 10px #3a9adf;
         padding: 10px;
     }

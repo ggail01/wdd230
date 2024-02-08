@@ -5,11 +5,15 @@
             "links": [
                 {
                     "url": "week01/holygrail.html", 
-                    "title": "HG Layout"
+                    "title": "Layout"
                 }, 
                 {
                     "url": "week01/media-query.html",
                     "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/ggail01/pen/dyrmpeq",
+                    "title": "JS Pen"
                 }
             ]
         },
@@ -19,6 +23,10 @@
                 {
                     "url": "week02/design.html",
                     "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/ggail01/pen/bGZvwzV",
+                    "title": "Menu"
                 },
                 {
                     "url": "week02/bom.html",
@@ -51,6 +59,10 @@
         {
             "week": "Week 4:",
             "links": [
+                {
+                    "url": "https://codepen.io/ggail01/pen/bGZvBbp",
+                    "title": "Pseudo-Classes"
+                },
                 {
                     "url": "week04/images/exercise.webp",
                     "title": "Combinators"
