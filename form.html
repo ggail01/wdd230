@@ -40,41 +40,46 @@
 
     <main id="form">
         <form method="get" action="record.html">
-            <label for="username">Username*</label>
-            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+            <label for="username">Username*
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+            </label>
 
-            <label for="password">Password*</label>
-            <div class="password-container">
-                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" title="Please enter at least 8 alphanumeric characters" placeholder="Enter Password" required>
-                <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('password')">Show</button>
-            </div>
+            <label for="password">Password*
+                <div class="password-container">
+                    <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" title="Please enter at least 8 alphanumeric characters" placeholder="Enter Password" required>
+                    <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('password')">Show</button>
+                </div>
+            </label>
 
-            <label for="confirmPassword">Confirm Password*</label>
-            <div class="password-container">
-                <input type="password" id="confirmPassword" name="confirmPassword" pattern="[a-zA-Z0-9]+" title="Re-enter password." placeholder="Re-enter Password" oninput="validatePasswords()" required>
-                <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('confirmPassword')">Show</button>
-                <div id="passwordMatchStatus"></div>
-            </div>
+            <label for="confirmPassword">Confirm Password*
+                <div class="password-container">
+                    <input type="password" id="confirmPassword" name="confirmPassword" pattern="[a-zA-Z0-9]+" title="Re-enter password." placeholder="Re-enter Password" oninput="validatePasswords()" required>
+                    <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('confirmPassword')">Show</button>
+                    <div id="passwordMatchStatus"></div>
+                </div>
+            </label>
 
-            <label for="email">E-mail*</label>
-            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="Enter a valid e-mail" required>
+            <label for="email">E-mail*
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="Enter a valid e-mail" required>
+            </label>
 
-            <label class="pageRating">Page Rating:</label>
-            <div id="rangevalue">0</div>
-            <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
-            <datalist id="rangevalues">
-	            <option value="0">0</option>
-	            <option value="1">1</option>
-	            <option value="2">2</option>
-	            <option value="3">3</option>
-	            <option value="4">4</option>
-	            <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </datalist>
+            <label class="pageRating">Page Rating:
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+	                <option value="0">0</option>
+	                <option value="1">1</option>
+	                <option value="2">2</option>
+	                <option value="3">3</option>
+	                <option value="4">4</option>
+	                <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </label>
 
             <button type="submit">Send Feedback</button>
         </form>
