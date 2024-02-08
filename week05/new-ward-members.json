@@ -1,0 +1,71 @@
+{
+    "newWardMembers": [
+        {
+            "familyName" : "Rodriguez",
+            "moveDate" : "2018-01-20",
+            "familyNumber" : "5",
+            "visitedByBishopric" : true,
+            "familyMembers" : [
+                {
+                    "name" : "Maria Rodriguez",
+                    "gender" : "Female",
+                    "birthdate" : "1970-02-14"
+                },
+                {
+                    "name" : "Carlos Rodriguez",
+                    "gender" : "Male",
+                    "birthdate" : "1968-05-12"
+                },
+                {
+                    "name" : "Jessica Rodriguez",
+                    "gender" : "Female",
+                    "birthdate" : "1996-12-22"
+                },
+                {
+                    "name" : "Laura Rodriguez",
+                    "gender" : "Female",
+                    "birthdate" : "1999-07-14"
+                },
+                {
+                    "name" : "Antonio Rodriguez",
+                    "gender" : "Male",
+                    "birthdate" : "2002-09-03"
+                }
+            ]
+        },
+
+        {
+            "familyName" : "Lee",
+            "moveDate" : "2020-05-20",
+            "familyNumber" : "5",
+            "visitedByBishopric" : false,
+            "familyMembers" : [
+                {
+                    "name" : "Daniel Lee",
+                    "gender" : "Male",
+                    "birthdate" : "1988-05-15"
+                },
+                {
+                    "name" : "Jessica Lee",
+                    "gender" : "Female",
+                    "birthdate" : "1992-09-03"
+                },
+                {
+                    "name" : "Kevin Lee",
+                    "gender" : "Male",
+                    "birthdate" : "1985-06-21"
+                },
+                {
+                    "name" : "Jason Lee",
+                    "gender" : "Male",
+                    "birthdate" : "1990-11-10"
+                },
+                {
+                    "name" : "Stephanie Lee",
+                    "gender" : "Female",
+                    "birthdate" : "1983-04-08"
+                }
+            ]
+        }
+    ]
+}
