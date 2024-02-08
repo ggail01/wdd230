@@ -81,6 +81,10 @@
             "week": "Week 5:",
             "links": [
                 {
+                    "url": "https://codepen.io/ggail01/pen/QWoVWvp",
+                    "title": "Psuedo Elements"
+                },
+                {
                     "url": "week05/new-ward-members.json",
                     "title": "JSON"
                 },
