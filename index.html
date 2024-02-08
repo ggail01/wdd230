@@ -59,7 +59,8 @@
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
-            <ul>
+            <ul id="links"></ul>
+            <!---<ul>
                 <li>
                     Week 01:
                     <a href="week01/holygrail.html">Layout</a> | 
@@ -93,20 +94,22 @@
                     <a href="week05/prophets.html">Fetch API</a> |
                     <a href="week05/weather.html">Weather API</a>
                 </li>
-            </ul>
+            </ul> -->
         </section>
         <section class="card">
             <h2>Information</h2>
             <!-- Information placeholders about weather, visits, etc. -->
             <p>About weather, visits, etc.</p>
-            <ul>
-                <li>
-                    Weather:
-                </li>
-                <li>
-                    Visits: <span class="visits"></span>
-                </li>
-            </ul>
+            <div class="info-card">
+                <ul>
+                    <li>
+                        Weather:  <div class="weather-card"><img id="weather-icon" src="#" alt="#"><span id="current-temp"></span><span id="figcaption"></span></div>
+                    </li>
+                    <li>
+                        Visit Counts: <span class="visits"></span>
+                    </li>
+                </ul>
+        </div>
         </section>
     </main>
 
@@ -122,5 +125,7 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/visitors.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>

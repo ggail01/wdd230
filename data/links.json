@@ -1,0 +1,86 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1:",
+            "links": [
+                {
+                    "url": "week01/holygrail.html", 
+                    "title": "HG Layout"
+                }, 
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "week": "Week 2:",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "Dom Manipulation"
+                }
+                
+            ]
+        },
+        {
+            "week": "Week 3:",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp", 
+                    "title": "WebP"
+                }, 
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "week/03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Web Storage API"
+                }
+            ]
+        },
+        {
+            "week": "Week 4:",
+            "links": [
+                {
+                    "url": "week04/images/exercise.webp",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "form-start/index.html",
+                    "title": "Forms Tutorial"
+                }
+            ]
+        },
+        {
+            "week": "Week 5:",
+            "links": [
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        } 
+    ]
+}
