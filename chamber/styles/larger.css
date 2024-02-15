@@ -11,6 +11,7 @@
     
         --extra-color1: rgb(255, 255, 255);
         --extra-color2: rgba(0, 0, 0, 0.1);
+        --extra-color3: black;
     }
 
     /* header */
@@ -150,7 +151,15 @@
 
     /* ---DIRECTORY PAGE--- */
     #members-container section {
-        box-shadow: 0px 0px 10px var(--extra-color2);
+        box-shadow: 0px 0px 10px var(--extra-color3);
+    }
+
+    #members-container h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        padding-top: .5rem;
+        padding-bottom: 0;
     }
 
     #members-container.list-view section {
@@ -189,7 +198,7 @@
         font-size: 1rem;
         padding: 0;
         font-family: var(--heading-font);
-        color: var(--extra-color2);
+        color: var(--primary-color);
         font-style: normal;
         text-align: left;
         margin: 0;
@@ -200,7 +209,8 @@
     }
     
     #members-container.list-view section:nth-child(even){
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
     }
 
 }
