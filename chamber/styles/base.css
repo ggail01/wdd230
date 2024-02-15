@@ -11,6 +11,8 @@
     --extra-color1: rgb(255, 255, 255);
     --extra-color2: rgba(0, 0, 0, 0.1);
     --extra-color3: black;
+    --extra-color4: #126490;
+
 }
 
 * {
@@ -605,7 +607,7 @@ textarea {
 #members-container h3 {
     font-size: .8rem;
     font-style: italic;
-    color: var(--accent1);
+    color: var(--extra-color4);
     padding-top: 0;
     padding-bottom: .2rem;
     margin-top: .5rem;
@@ -617,14 +619,14 @@ textarea {
 
 /*List view*/
 .list-view #web-link {
-    color: var(--extra-color2);
+    color: var(--extra-color3);
+    font-size: .9rem;
     line-height: 2rem;
     display:initial;
 }
 
 .list-view #web-link:hover {
-    color: var(--accent2);
-    font-weight: bold;
+    color: var(--accent1);
 }
 
 #members-container.list-view {
@@ -652,26 +654,30 @@ textarea {
 }
 
 
-#members-container.list-view h2, #members-cards.list-view h3 {
+#members-container.list-view h2 {
     font-size: 1rem;
     padding: 0;
     font-family: var(--heading-font);
-    color: var(--extra-color2);
+    color: var(--primary-color);
     font-style: normal;
     text-align: left;
     margin: 0;
 }
 
 #members-container.list-view h3 {
+    color: var(--extra-color3);
     text-align: left;
     font-weight: 400;
     padding-bottom: .5rem;
-    font-style: italic;
+    font-style: normal;
+}
+
+#members-container.list-view p, span {
+    font-size: .9rem;
 }
 
 #members-container.list-view section:nth-child(even){
     background-color: var(--secondary-color);
-    color: var(--primary-color);
 }
 
 
@@ -688,7 +694,7 @@ textarea {
 
 #gridBtn:hover, #listBtn:hover {
     cursor: pointer;
-    background-color: var(--secondary);
+    background-color: var(--secondary-color);
 }
 
 #viewBtns {
@@ -696,8 +702,8 @@ textarea {
 }
 
 #viewBtns img {
-    width: 20;
-    height: 20;
+    width: 30px;
+    height: 30px;
     text-align: center;
     padding: 1px;
 }

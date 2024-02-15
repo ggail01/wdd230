@@ -12,6 +12,7 @@
         --extra-color1: rgb(255, 255, 255);
         --extra-color2: rgba(0, 0, 0, 0.1);
         --extra-color3: black;
+        --extra-color4: #126490;
     }
 
     /* header */
@@ -151,7 +152,7 @@
 
     /* ---DIRECTORY PAGE--- */
     #members-container section {
-        box-shadow: 0px 0px 10px var(--extra-color3);
+        box-shadow: 0px 0px 10px var(--secondary-color);
     }
 
     #members-container h2 {
@@ -194,7 +195,7 @@
         margin: 0 1rem;
     }
     
-    #members-container.list-view h2, #members-cards.list-view h3 {
+    #members-container.list-view h2 {
         font-size: 1rem;
         padding: 0;
         font-family: var(--heading-font);
@@ -205,12 +206,18 @@
     }
     
     #members-container.list-view h3 {
+        color: var(--extra-color3);
+        text-align: left;
+        margin: 0;
         font-weight: 400;
+    }
+
+    #members-container.list-view p, span {
+        font-size: .9rem;
     }
     
     #members-container.list-view section:nth-child(even){
         background-color: var(--secondary-color);
-        color: var(--primary-color);
     }
 
 }
