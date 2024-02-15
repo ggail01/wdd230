@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Moises Padilla Chamber of Commerce | Directory Page | WDD 230 - Web Frontend Development I</title>
+    <meta name="description" content="Directory Page of Moises Padilla Chamber of Commerce for WDD 230: Web Frontend Development">
+    <meta name="author" content="Abigail L. Bado">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="mpc.ico">
+
+    <!-- Social Media META -->
+    <meta property="og:title" content="Moises Padilla Chamber of Commerce | Discover Page | WDD 230 - Web Frontend Development I">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://visayandailystar.com/wp-content/uploads/2022/10/moises-padilla.jpg">
+    <meta property="og:url" content="https://ggail01.github.io/wdd230/">
 </head>
 <body>
-    
+    <header class="header">
+        <img class="logo" src="images/logo-name.png" alt="icon and name of naguilian chamber of commerce" >
+        <div class="social-icons">
+            <a href="#">
+                <img class="icons" src="images/facebook.png" alt="facebook logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/twitter.png" alt="twitter logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/instagram.png" alt="instagram logo">
+            </a>
+        </div>
+        <!-- Hamburger Menu -->
+        <a id="menu"></a>
+    </header>
+
+    <nav>
+        <ul class="navigation container">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="../chamber/discover.html">Discovery</a></li>
+            <li><a href="../chamber/directory.html">Directory</a></li>
+            <li><a href="../chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="directory-menu">
+        <section class="join-head">
+            <h1>Our Members</h1>
+        </section>
+
+        <div id="viewBtns">
+            <button id="gridBtn" title="Grid Button"><img src="images/grid.svg" alt="Grid Icon" height="25" width="25"></button>
+            <button id="listBtn" title="List Button"><img src="images/list.svg" alt="List Icon" height="25" width="25"></button>
+        </div>      
+
+        <div id="members-container"></div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <h3>Contact Details:</h3>
+                <p>Moises Padilla, Negros Occidental, Philippines</p>
+                <p><img src="images/email.png" alt="Email Icon"> mpc.commerce@email.com</p>
+                <p><img src="images/phone.png" alt="Phone Icon"> +1 234 567 8910</p>
+            </div>
+            <div class="footer-2">
+                <a href="../week01/chamber-site-plan.html">
+                    <img src="images/logo.png" alt="Site Logo">
+                </a>
+            </div>
+        </div>
+        <div class="footer-3">
+            <p>&copy; <span id="currentYear"></span> | Abigail L. Bado | WDD 230 - Web Frontend Development I</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hambugerMenu.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>

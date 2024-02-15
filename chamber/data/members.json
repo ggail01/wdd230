@@ -1,0 +1,75 @@
+[
+    {
+      "name": "ABC Corporation",
+      "address": "123 Main St, Cityville",
+      "phone": "555-1234",
+      "website": "http://www.abccorporation.com",
+      "membershipLevel": "Gold",
+      "image": "images/abc_corp_logo.webp",
+      "category": "Technology"
+    },
+    {
+      "name": "XYZ Inc.",
+      "address": "456 Elm St, Townsville",
+      "phone": "555-5678",
+      "website": "http://www.xyzinc.com",
+      "membershipLevel": "Silver",
+      "image": "images/xyz_inc_logo.webp",
+      "category": "Retail"
+    },
+    {
+      "name": "123 Industries",
+      "address": "789 Oak St, Villageton",
+      "phone": "555-9012",
+      "website": "http://www.123industries.com",
+      "membershipLevel": "Bronze",
+      "image": "images/123_industries_logo.webp",
+      "category": "Manufacturing"
+    },
+    {
+      "name": "Acme Co.",
+      "address": "321 Maple St, Hamletsville",
+      "phone": "555-3456",
+      "website": "http://www.acmeco.com",
+      "membershipLevel": "Platinum",
+      "image": "images/acme_co_logo.webp",
+      "category": "Technology"
+    },
+    {
+      "name": "Widgets LLC",
+      "address": "654 Birch St, Suburbia",
+      "phone": "555-7890",
+      "website": "http://www.widgetsllc.com",
+      "membershipLevel": "Gold",
+      "image": "images/widgets_llc_logo.webp",
+      "category": "Retail"
+    },
+    {
+      "name": "Gizmos Co.",
+      "address": "987 Pine St, Countryside",
+      "phone": "555-2345",
+      "website": "http://www.gizmosco.com",
+      "membershipLevel": "Silver",
+      "image": "images/gizmos_co_logo.webp",
+      "category": "Technology"
+    },
+    {
+      "name": "MegaCorp",
+      "address": "101 Oak St, Cityburg",
+      "phone": "555-6789",
+      "website": "http://www.megacorp.com",
+      "membershipLevel": "Bronze",
+      "image": "images/megacorp_logo.webp",
+      "category": "Manufacturing"
+    },
+    {
+      "name": "Tech Innovations",
+      "address": "555 Cedar St, Innovation City",
+      "phone": "555-5432",
+      "website": "http://www.techinnovations.com",
+      "membershipLevel": "Gold",
+      "image": "images/tech_innovations_logo.webp",
+      "category": "Technology"
+    }
+  ]
+  
