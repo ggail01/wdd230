@@ -576,11 +576,9 @@ textarea {
 #members-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: .4rem;
+    gap: .5rem;
     padding: 1rem;
     margin-bottom: 3rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
  
 }
 
@@ -590,6 +588,7 @@ textarea {
     border: 1px solid var(--extra-color3);
     padding: 2rem 1rem;
     border-radius: 4px;
+    margin-right: 20px;
 }
 
 
