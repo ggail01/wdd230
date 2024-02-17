@@ -552,6 +552,10 @@ textarea {
     font-weight: bold;
 }
 
+tbody tr:nth-child(even){
+    background-color: var(--secondary-color);
+}
+
 /* ---THANK YOU PAGE--- */
 /* Container styles */
 .thank-you-container {

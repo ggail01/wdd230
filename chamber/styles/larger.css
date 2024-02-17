@@ -141,6 +141,10 @@
         width: 400px;
     } 
 
+    tbody tr:nth-child(even){
+        background-color: var(--secondary-color);
+    }
+
     /* ---THANK YOU PAGE--- */
     .thank-you-container {
         padding: 10px;
