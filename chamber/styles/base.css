@@ -505,7 +505,7 @@ img.effect {
     font-family: var(--heading-font);
     position: absolute;
     bottom: 5px;
-    left: 40px;
+    left: 50px;
     opacity: 0.90;
     padding: 10px;
     color: var(--accent2);
