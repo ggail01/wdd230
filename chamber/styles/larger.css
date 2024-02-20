@@ -121,7 +121,7 @@
     #spotlight-card h3 {
         font-size: .8rem;
         font-style: italic;
-        color: var(--accent1);
+        color: var(--extra-color4);
         padding-top: 0;
         padding-bottom: .2rem;
     }
