@@ -1,5 +1,4 @@
 // ---SPOTLIGHT---
-
 const baseURL = "https://ggail01.github.io/wdd230/chamber/";
 const membersURL = "https://ggail01.github.io/wdd230/chamber/data/members.json";
 const spotlightCard = document.querySelector('#spotlight-card');

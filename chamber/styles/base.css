@@ -5,9 +5,6 @@
     --accent1: #708090;
     --accent2: #F8F8F8;
 
-    --heading-font: 'Anton', sans-serif;
-    --paragraph-font: 'Montserrat', sans-serif;
-
     --extra-color1: rgb(255, 255, 255);
     --extra-color2: rgba(0, 0, 0, 0.1);
     --extra-color3: black;
@@ -23,7 +20,7 @@
 }
 
 body {
-    font-family: var(--paragraph-font);
+    font-family: 'Montserrat', sans-serif;;
 }
 
 /* header */
@@ -118,7 +115,7 @@ a#menu.show{
 
 #menu.show::before {
     content: "X";
-    font-family: var(--paragraph-font);
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     height: 50px;
     display: flex;
@@ -153,13 +150,13 @@ a#menu.show{
 }
 
 h1 {
-    margin: auto;
     text-align: center;
-    font-family: var(--heading-font);
+    font-family: 'Anton', sans-serif;
     font-size: 1.2rem;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-weight: 100;
+    margin-top: 15px;
     padding: 1.5rem;
 }
 
@@ -206,7 +203,7 @@ h1 {
 }
 
 .caption h2 {
-    font-family: var(--heading-font);
+    font-family: 'Anton', sans-serif;
     font-size: 1.2rem;
     color: var(--primary-color);
     text-align: center;
@@ -238,7 +235,6 @@ h1 {
 }
 
 /* ---BANNER--- */
-/* Banner styling */
 .banner {
     display: none;
     padding: 30px;
@@ -253,7 +249,6 @@ h1 {
     z-index: 9999;
 }
 
-/* Close button container styling */
 .close-container {
     float: right;
     background-color: var(--extra-color5);
@@ -261,43 +256,76 @@ h1 {
     border-radius: 5px;
 }
 
-/* Close button styling */
 .closebtn {
     color: var(--primary-color);
     font-size: 20px;
     cursor: pointer;
 }
 
-/* Close button hover effect */
 .closebtn:hover {
     color: var(--extra-color3);
 }
 
 /* ---SPOTLIGHT--- */
-#spotlight-container {
-    text-align: center;
-    margin-top: 20px;
-}
-  
-.card {
-    display: inline-block;
-    border: 1px solid var(--extra-color6);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-}
-  
-.card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-  
-.details {
-    margin-top: 10px;
+h2#h2-spotlight {
+    color: var(--primary-color);
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 20px;
 }
 
-/* Footer */
+#spotlight-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+#spotlight-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--extra-color6);
+    margin-bottom: 50px;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+#spotlight-card section {
+    background-color: var(--extra-color5);
+    margin: .2rem 1.5rem;
+    min-width: 100px;
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#spotlight-card img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#spotlight-card h2 {
+    font-size: 1.3rem;
+    padding-top: .5rem;
+    padding-bottom: 0;
+}
+
+
+#spotlight-card h3 {
+    font-size: .8rem;
+    font-style: italic;
+    color: var(--accent1);
+    padding-top: 0;
+    padding-bottom: .2rem;
+}
+
+/* ---Footer--- */
 footer {
     background-color: var(--primary-color);
     color: var(--accent2);
@@ -356,7 +384,7 @@ footer {
 }
 
 footer h3 {
-    font-family: var(--heading-font);
+    font-family: 'Anton', sans-serif;
     font-weight: 100;
     color: var(--accent2);
     margin: 5px 0;
@@ -456,7 +484,7 @@ main {
 
 .sidebar h2,
 .sidebar h3 {
-    font-family: var(--heading-font);
+    font-family: 'Anton', sans-serif;
     font-size: 1.5rem;
     font-weight: 100;
     color: var(--primary-color);
@@ -502,7 +530,7 @@ img.effect {
 }
 
 .image-text {
-    font-family: var(--heading-font);
+    font-family: 'Anton', sans-serif;
     position: absolute;
     bottom: 5px;
     left: 50px;
@@ -530,7 +558,7 @@ h1#form-h1 {
 }
 
 h2 {
-    font-family: var(--heading-font);
+    font-family: 'Anton', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -750,7 +778,7 @@ section.join-head h1 {
 #members-container.list-view h2 {
     font-size: 1rem;
     padding: 0;
-    font-family: var(--heading-font);
+    font-family: 'Anton', sans-serif;
     color: var(--primary-color);
     font-style: normal;
     text-align: left;
@@ -772,7 +800,6 @@ section.join-head h1 {
 #members-container.list-view section:nth-child(even){
     background-color: var(--secondary-color);
 }
-
 
 #viewBtns {
     text-align: center;

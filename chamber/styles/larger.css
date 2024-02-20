@@ -6,14 +6,12 @@
         --accent1: #708090;
         --accent2: #F8F8F8;
     
-        --heading-font: 'Anton', sans-serif;
-        --paragraph-font: 'Montserrat', sans-serif;
-    
         --extra-color1: rgb(255, 255, 255);
         --extra-color2: rgba(0, 0, 0, 0.1);
         --extra-color3: black;
         --extra-color4: #126490;
         --extra-color5: #aee4f9;
+        --extra-color6: #97a6b5
     }
 
     /* header */
@@ -49,13 +47,13 @@
 	}
 
     h1 {
-        margin: auto;
         text-align: center;
-        font-family: var(--heading-font);
+        font-family: 'Anton', sans-serif;
         font-size: 2.5rem;
         background-color: var(--primary-color);
         color: var(--secondary-color);
         font-weight: 100;
+        margin-top: 15px;
         padding: 1.5rem;
     }
 
@@ -78,11 +76,65 @@
     }
 
     .caption h2 {
-        font-family: var(--heading-font);
+        font-family: 'Anton', sans-serif;
         font-size: 1.7rem;
         color: var(--primary-color);
         text-align: center;
         border-bottom: 2px solid var(--primary-color);
+    }
+
+    /* ---SPOTLIGHT--- */
+    h2#h2-spotlight {
+        padding-top: 2.5rem;
+        font-size: 2rem;
+    }
+
+    #spotlight-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    #spotlight-card section {
+        background-color: var(--extra-color5);
+        max-width: fit-content;
+        width: 100%;
+        min-width: 300px;
+        border: 2px solid var(--extra-color6);
+        border-radius: 4px;
+        margin: 1.5rem;
+    }
+
+    #spotlight-card section > * {
+        margin: 0.2rem;
+    }
+    
+    #spotlight-card h2 {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: .5rem;
+        padding-bottom: 0;
+    }
+    
+    
+    #spotlight-card h3 {
+        font-size: .8rem;
+        font-style: italic;
+        color: var(--accent1);
+        padding-top: 0;
+        padding-bottom: .2rem;
+    }
+
+    #spotlight-card img:hover {
+        transform: scale(1.2);
+        padding: 1rem;
+    }
+
+    #spotlight-card img {
+        height: 150px;
+        width: auto;
+
     }
 
     /* ---DISCOVER PAGE--- */
@@ -219,7 +271,7 @@
     #members-container.list-view h2 {
         font-size: 1rem;
         padding: 0;
-        font-family: var(--heading-font);
+        font-family: 'Anton', sans-serif;
         color: var(--primary-color);
         font-style: normal;
         text-align: left;
