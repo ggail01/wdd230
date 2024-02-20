@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moises Padilla Chamber of Commerce | Home Page | WDD 230 - Web Frontend Development I</title>
     <meta name="description" content="Home Page of Moises Padilla Chamber of Commerce for WDD 230: Web Frontend Development">
@@ -55,7 +55,7 @@
 
     <div class="hero">
         <img src="images/hero-image.jpg" alt="Hero Image">
-        <a href="#" class="join-button">Join Now</a>
+        <a href="join.html" class="join-button">Join Now</a>
         <h1>Moises Padilla Chamber of Commerce</h1>
     </div>
 
@@ -67,9 +67,9 @@
             <div class="caption">
                 <h2>Events</h2>
                 <ul>
-                    <li>Event 1</li>
-                    <li>Event 2</li>
-                    <li>Event 3</li>
+                    <li>1. Panaad sa Negros Hinuptanan Festival</li>
+                    <li>2. Town Fiesta</li>
+                    <li>3. Agricultural Trade Fairs</li>
                 </ul>
             </div>
         </section>
@@ -81,26 +81,34 @@
             <div class="caption">
                 <h2>Spotlight</h2>
                 <ul>
-                    <li>Spotlight Feature 1</li>
-                    <li>Spotlight Feature 2</li>
-                    <li>Spotlight Feature 3</li>
+                    <li>1. Natural Attractions</li>
+                    <li>2. Historical Landmarks</li>
+                    <li>3. Festivals & Celebration</li>
                 </ul>
             </div>
         </section>
-
+        
         <section class="content-item" id="weather">
             <div class="item-image">
                 <img src="images/weather.png" alt="Weather">
             </div>
             <div class="caption">
                 <h2>Weather</h2>
-                <ul>
-                    <li>Weather Update 1</li>
-                    <li>Weather Update 2</li>
-                    <li>Weather Update 3</li>
-                </ul>
+                <div class="weather-container"></div>
             </div>
         </section>
+    </div>
+
+    <section id="spotlight-container">
+        <h2>Special Thanks To </h2>
+        <div id="spotlight-card"></div>
+    </section>
+
+    <div id="chamberBanner" class="banner">
+        <span class="close-container" onclick="closeBanner()">
+            <span class="closebtn">&times;</span>
+        </span>
+        <strong>Join Us!</strong> Attend the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m. 🥂
     </div>
 
     <footer>
@@ -125,5 +133,8 @@
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hambugerMenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@
         --extra-color2: rgba(0, 0, 0, 0.1);
         --extra-color3: black;
         --extra-color4: #126490;
+        --extra-color5: #aee4f9;
     }
 
     /* header */
@@ -76,10 +77,12 @@
         margin-top: -250px;
     }
 
-    h2 {
+    .caption h2 {
         font-family: var(--heading-font);
-        font-size: 1.5rem;
-        text-align: left;
+        font-size: 1.7rem;
+        color: var(--primary-color);
+        text-align: center;
+        border-bottom: 2px solid var(--primary-color);
     }
 
     /* ---DISCOVER PAGE--- */
@@ -100,8 +103,18 @@
         font-size: 2.5rem;
     }
 
-    aside p {
-        padding-right: 5rem;
+    .sidebar {
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+    .sidebar p {
+        font-size: .9rem;
+        padding-right: 2.5rem;
+    }
+
+    .discover-content {
+        margin-left: 30px;
     }
 
     .image-text {

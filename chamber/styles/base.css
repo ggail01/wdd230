@@ -12,7 +12,8 @@
     --extra-color2: rgba(0, 0, 0, 0.1);
     --extra-color3: black;
     --extra-color4: #126490;
-
+    --extra-color5: #aee4f9;
+    --extra-color6: #97a6b5;
 }
 
 * {
@@ -193,7 +194,7 @@ h1 {
 .content-item ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 10px;
 }
 
 .content-item li {
@@ -206,10 +207,94 @@ h1 {
 
 .caption h2 {
     font-family: var(--heading-font);
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
     text-align: center;
     border-bottom: 2px solid var(--primary-color);
+}
+
+/* ---Weather--- */
+.weather-container {
+    margin-top: 10px;
+}
+.weather-container table {
+    width: 100%;
+    margin: 0;
+    border: 1px solid var(--accent2);
+}
+
+.weather-container th {
+    background-color: var(--extra-color5);
+}
+
+.weather-container td {
+    background-color: var(--extra-color1);
+}
+
+.weather-container td, .weather-container th {
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+/* ---BANNER--- */
+/* Banner styling */
+.banner {
+    display: none;
+    padding: 30px;
+    background-color: var(--extra-color6);
+    color: var(--primary-color);
+    text-align: center;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Close button container styling */
+.close-container {
+    float: right;
+    background-color: var(--extra-color5);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Close button styling */
+.closebtn {
+    color: var(--primary-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Close button hover effect */
+.closebtn:hover {
+    color: var(--extra-color3);
+}
+
+/* ---SPOTLIGHT--- */
+#spotlight-container {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.card {
+    display: inline-block;
+    border: 1px solid var(--extra-color6);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+  
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+  
+.details {
+    margin-top: 10px;
 }
 
 /* Footer */
@@ -304,9 +389,9 @@ main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: var(--extra-color1);
+    background-color: var(--extra-color5);
     border: 1px solid var(--extra-color1);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px var(--extra-color2);
 }
 
@@ -587,6 +672,8 @@ section.join-head h1 {
     gap: .5rem;
     padding: 1rem;
     margin-bottom: 3rem;
+    background-color: var(--extra-color1);
+    border-radius: 5px;
  
 }
 
@@ -660,7 +747,6 @@ section.join-head h1 {
     margin: 0 0;
 }
 
-
 #members-container.list-view h2 {
     font-size: 1rem;
     padding: 0;
@@ -715,7 +801,7 @@ section.join-head h1 {
     padding: 1px;
 }
 
-/* ---THANK YOU PAGE--- */
+/* ---JOIN PAGE--- */
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .join-container {
