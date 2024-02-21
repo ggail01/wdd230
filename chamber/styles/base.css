@@ -23,7 +23,7 @@ body {
     font-family: 'Montserrat', sans-serif;;
 }
 
-/* header */
+/* --Header-- */
 .header {
 	display: flex;
 	align-items: center;
@@ -32,7 +32,7 @@ body {
     height: auto;
 }
 
-/* logo/icons */
+/* --Logo/Icons-- */
 .logo {
     height: 100px;
 }
@@ -45,7 +45,7 @@ div.social-icons {
     display: none;
 }
 
-/* navigation */
+/* --Navigation-- */
 nav {
     background-color: var(--primary-color);
     margin: 0 auto;
@@ -84,7 +84,7 @@ nav {
     display: block;
 }
 
-/* small menu/nav */
+/* --Small Menu/Nav-- */
 #menu {
     display: block;
     font-size: 2rem;
@@ -126,7 +126,7 @@ a#menu.show{
     color: var(--primary-color);
 }
 
-/* hero */
+/* --Hero-- */
 .hero {
     position: relative;
 }
@@ -136,7 +136,7 @@ a#menu.show{
     height: auto;
 }
 
-/* Join Button */
+/* --Join Button-- */
 .join-button {
     position: absolute;
     margin-top: 60%;
@@ -160,7 +160,7 @@ h1 {
     padding: 1.5rem;
 }
 
-/* Main */
+/* --Main-- */
 .content-container {
     padding: 20px;
 }
@@ -210,7 +210,7 @@ h1 {
     border-bottom: 2px solid var(--primary-color);
 }
 
-/* ---Weather--- */
+/* --Weather-- */
 .weather-container {
     margin-top: 10px;
 }
@@ -234,7 +234,7 @@ h1 {
     border: none;
 }
 
-/* ---BANNER--- */
+/* --Banner-- */
 .banner {
     display: none;
     padding: 30px;
@@ -266,7 +266,7 @@ h1 {
     color: var(--extra-color3);
 }
 
-/* ---SPOTLIGHT--- */
+/* --Spotlight-- */
 h2#h2-spotlight {
     color: var(--primary-color);
     padding-top: 2rem;
@@ -302,6 +302,7 @@ h2#h2-spotlight {
     width: 100%;
     padding: 2rem 1rem;
     text-align: center;
+    border-radius: 5px;
 }
 
 #spotlight-card img {
@@ -325,7 +326,7 @@ h2#h2-spotlight {
     padding-bottom: .2rem;
 }
 
-/* ---Footer--- */
+/* --Footer-- */
 footer {
     background-color: var(--primary-color);
     color: var(--accent2);
@@ -434,7 +435,7 @@ main {
     font-size: 1.5rem;
 }
 
-/* calendar */
+/* Calendar */
 #calendar {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -642,7 +643,8 @@ textarea {
 }
 
 .membership-benefits h2 {
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .membership-benefits table {
@@ -739,7 +741,7 @@ section.join-head h1 {
     display: none; /*hide from grid view*/
 }
 
-/*List view*/
+/* List view */
 .list-view #web-link {
     color: var(--extra-color3);
     font-size: .9rem;
