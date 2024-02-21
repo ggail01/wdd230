@@ -165,6 +165,12 @@
         padding-right: 2.5rem;
     }
 
+    #discover-img img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 40px;
+    }
+
     .discover-content {
         margin-left: 30px;
     }
