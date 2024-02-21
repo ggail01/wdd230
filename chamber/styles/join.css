@@ -1,5 +1,5 @@
 /* ---JOIN PAGE--- */
-/* Responsive styles */
+/* Responsive styles for Mobile view */
 @media screen and (max-width: 768px) {
     .join-container {
         flex-direction: column;
