@@ -477,6 +477,11 @@ main {
 }
 
 /* Sidebar styles */
+#visitMessage {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .sidebar {
     background-color: var(--accent1);
     padding: 20px;

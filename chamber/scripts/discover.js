@@ -1,4 +1,4 @@
-//---Visits
+// ---VISITS---
 document.addEventListener("DOMContentLoaded", function () {
     const visitMessage = document.getElementById('visitMessage');
     const lastVisit = localStorage.getItem('lastVisit');
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let message;
     if (!lastVisit) {
-        message = "Welcome! Let us know if you have any questions.";
+        message = "Welcome to MPC! Let us know if you have any questions.";
     } else {
         const daysSinceLastVisit = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
         if (daysSinceLastVisit < 1) {
